@@ -1,4 +1,8 @@
-public class Duck extends Bird {
+package main.java.animal;
+
+import main.java.Asset;
+
+public class Duck extends Bird implements Asset {
     @Override
     public String speak() {
         return "Quack Quack";
@@ -11,5 +15,10 @@ public class Duck extends Bird {
 
     public void swim() {
         System.out.println("I'm swimming...");
+    }
+
+    @Override
+    public int getValue() {
+        return 10;
     }
 }

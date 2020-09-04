@@ -1,3 +1,9 @@
+package main.java;
+
+import main.java.animal.Animal;
+import main.java.animal.Bird;
+import main.java.animal.Duck;
+
 public class Trainer {
     public static void main(String[] args) {
         Duck d = new Duck();
@@ -12,8 +18,8 @@ public class Trainer {
         Duck d2 = (Duck) a; // downcasting
         train(new Duck());
         // train(new Parrot());
-        Animal a2 = new Animal();
-        Bird b2 = new Bird();
+        //Animal a2 = new Animal();
+        //Bird b2 = new Bird();
     }
 
     private static void getToSpeak(Animal animal) {
